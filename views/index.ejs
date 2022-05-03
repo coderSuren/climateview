@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Live Weather Forecast</h1>
+    <div class="box" style="display: <%= displayProperty %>;">
+        <h2 class="item">City : <%= weatherData[0] %></h2>
+        <h2 class="item">Weather : <%= weatherData[1] %> <img src="<%= weatherImg %>" class="icon" alt="weather Icon"> </h2>
+        <h2 class="item"> Temperature : <%= weatherData[2] %> &#8451;</h2> 
+    </div>
+    <form action="/" method="post" class="box" autocomplete="off">
+        <label class="item" for="cityinput"><h2>Enter City name to view Weather</h2></label>
+        <div class="item">
+            <input type="text" id="cityinput" placeholder="Example: chennai" name="city">
+            <button type="submit">Go</button>
+        </div>
+    </form>
+</body>
+</html>
