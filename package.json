@@ -1,16 +1,24 @@
 {
+  "homepage": "https://coderSuren.github.io/climateview",
   "name": "weather_api",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
+    "build": "node app.js",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.0",
+    "build": "^0.1.4",
     "ejs": "^3.1.7",
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
