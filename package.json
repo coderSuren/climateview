@@ -5,10 +5,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "node app.js",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo 'hello build'"
   },
   "author": "",
   "license": "ISC",
