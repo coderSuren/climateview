@@ -4,8 +4,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "engines":{
+    "node": "16.x"
+  },
   "scripts": {
-    "build": "echo 'hello build'",
+    "test": "echo 'hello build'",
     "start": "node app.js"
   },
   "author": "",
