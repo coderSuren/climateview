@@ -5,7 +5,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "echo 'hello build'"
+    "build": "echo 'hello build'",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
