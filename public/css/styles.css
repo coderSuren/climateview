@@ -1,14 +1,12 @@
 html {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
-  min-width: ;
-  height: 1000px;
+  /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);  */
+  /* min-width: ; */
   font-family: 'helvetica neue';
-  overflow-y: hidden;
 }
 
 h1 {
-  display: ;
+  /* display: ; */
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -79,7 +77,16 @@ button {
   padding-bottom: 6px;
   border-width: 0;
 }
-
+#nextButton, #prevButton {
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+  flex-shrink: 0;
+  height: 50px;
+}
 input[type="text"] {
   text-align: center;
   height: 60px;
@@ -105,4 +112,52 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.carousel-container{
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 10%;
+  right: 10%;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-container {
+  display: flex;
+  width: fit-content;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: #f0f0f0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
 }
