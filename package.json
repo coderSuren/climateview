@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "echo 'hello build'",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "echo 'build complete'"
   },
   "author": "",
   "license": "ISC",
