@@ -1,12 +1,13 @@
-html {
-  background-color: #E4E9FD;
+html, body {
+  background-color: #E4E9FD !important;
   /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);  */
   /* min-width: ; */
+  margin:0;
+  padding:0;
   font-family: 'helvetica neue';
 }
 
 h1 {
-  /* display: ; */
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -34,7 +35,7 @@ h2{
 }
 
 .item {
-  min-height: 70px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #F1F1F1;
@@ -66,7 +67,7 @@ form {
   margin-left: 20px;
 }
 
-button {
+.button-1 {
   min-height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -77,6 +78,29 @@ button {
   padding-bottom: 6px;
   border-width: 0;
 }
+
+.button-2{
+  width: auto;
+  display: block;
+  margin: auto;
+  font-size: 20px;
+  border-radius: 5px;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+
+}
+.button-2:hover, .button-1:hover{
+  background-color: #E4E9FD;
+  color: #A683E3;
+  /* zoom to 1.2x time */
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+  
+}
+
 #nextButton, #prevButton {
   border-radius: 50%;
   border-color: transparent;
@@ -86,6 +110,7 @@ button {
   border-width: 0;
   flex-shrink: 0;
   height: 50px;
+  width: 50px;
 }
 input[type="text"] {
   text-align: center;
@@ -131,33 +156,55 @@ footer {
   -webkit-transform: rotate(135deg);
 }
 
-.carousel-container{
+.forecast{
   display: flex;
+  flex-direction: row;
   align-items: center;
-  position: relative;
+
+}
+
+.carousel-container{
+  display: inline-flex;
+  align-items: center;
   left: 10%;
   right: 10%;
+  margin: auto;
+  min-width: 200px;
 }
 
 .carousel {
   width: 100%;
   overflow: hidden;
-  position: relative;
+  /* position: relative;   */
+  /* margin: auto; */
+
+  
 }
 
 .card-container {
   display: flex;
   width: fit-content;
   transition: transform 0.5s ease;
+  overflow: hidden;
 }
 
 .card {
   width: 200px;
-  height: 300px;
-  background-color: #f0f0f0;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 300px;
+  height: 100%;
+  font-size: 12px;
+  background-color: #ffffff;
+  margin-left: 5px;
+  margin-right: 5px;  
+  text-align: center;
+  align-content: center;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+.error {
+  color: red;
   font-size: 24px;
+  text-align: center;
+  display: block;
 }

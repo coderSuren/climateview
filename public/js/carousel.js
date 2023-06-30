@@ -7,16 +7,17 @@
         var totalCardCount = cards.length;
         var index = 0;
 
-        carousel.style.width = (cardWidth + cardMarginRight) * visibleCardCount + 'px';
+        carousel.style.width = (cardWidth + cardMarginRight +5) * visibleCardCount+ 'px';
+        carousel.style.minWidth = cardWidth+ 10  + 'px';
 
         function showNextCards() {
         index = Math.min(index + 1, totalCardCount - visibleCardCount);
-        cardContainer.style.transform = 'translateX(-' + (cardWidth + cardMarginRight) * index + 'px)';
+        cardContainer.style.transform = 'translateX(-' + (cardWidth + cardMarginRight+5) * index + 'px)';
         }
 
         function showPreviousCards() {
         index = Math.max(index - 1, 0);
-        cardContainer.style.transform = 'translateX(-' + (cardWidth + cardMarginRight) * index + 'px)';
+        cardContainer.style.transform = 'translateX(-' + (cardWidth + cardMarginRight+5) * index + 'px)';
         }
 
         // Example usage for sliding functionality
